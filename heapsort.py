@@ -42,6 +42,11 @@ def build_max_heap(A,n):
    for i in range(((n//2)-1),-1,-1):
       max_heapify(A,i,n)
 
+# O(lgn)
+def delete_max(A,n):
+   A[0],A[n] = A[n],A[0] # max value to end
+   max_heapify(A,0,n)
+
 # O(nlgn)
 # Sorts an array in place
 def heapsort(A):
@@ -57,12 +62,28 @@ def heapsort(A):
       A[0] = temp
       max_heapify(A,0,i)
 
+# O(nlgn)
+def heapsort_with_delete_max(A):
+   if (len(A)==0):
+      print("Error: empty array")
+      return
+
+   build_max_heap(A,len(A))
+
+   for i in range(len(A)-1,0,-1):
+      delete_max(A,i)
+
       
 # Change values of unsortedA to test
 unsortedA = [5,16,2,1,9,12,189,90]
 print(unsortedA)
 heapsort(unsortedA)
 print(unsortedA)
+
+unsortedB = [12,3,78,56,2,1]
+print(unsortedB)
+heapsort_with_delete_max(unsortedB)
+print(unsortedB)
 
 
 
