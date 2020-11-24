@@ -33,7 +33,6 @@ def max_heapify(A,i,n):
       A[largest] = temp
       max_heapify(A,largest,n)
 
-
 # O(n)
 # Builds max heap from unordered input array
 def build_max_heap(A,n):
