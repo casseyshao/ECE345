@@ -6,6 +6,6 @@ The algorithms for the code in this repository were implemented using algorithms
   
 (My lecture notes can also be found in this repository).
 
-References:
+References:  
 [1] Veneris, Andreas, Dr, and Zissis Poulos. "ECE345 Lectures." 2020. Lecture.  
 [2] Cormen, Thomas H., et al. Introduction to Algorithms. 3rd ed., The MIT Press, 2009. 
