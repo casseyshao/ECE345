@@ -25,11 +25,11 @@ def counting_sort(A,B,k):
 
 # Test using different values for array
 unsortedA = [2,6,4,4,1,5,3]
-max = 6
+maxVal = 6
 # sortedOutput needs to be same size as unsortedA
 sortedOutput = []
 for i in range(0,len(unsortedA)):
    sortedOutput = sortedOutput + [0]
-counting_sort(unsortedA,sortedOutput,max)
+counting_sort(unsortedA,sortedOutput,maxVal)
 print(unsortedA)
 print(sortedOutput)
